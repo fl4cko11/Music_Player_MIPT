@@ -2,7 +2,8 @@
 
 ## Концептуальная модель:
 ![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/conceptual_model.png)
-Определим сущность плеера:
+
+Определим сущности, **определяющие** плеер:
 1) Структура **DurationT** длительность трека
 2) Класс **Track** для треков
 3) Класс **Playlist** для плейлистов
@@ -12,3 +13,19 @@
 
 ## Логическая модель:
 ![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/logic_model.png)
+
+## Структура Проекта:
+1)  [Декларация и Реализация всех сущностей](https://github.com/fl4cko11/Music_Player_MIPT/tree/main/CPP_classes)
+2)  [SQL запросы и файлы для коммуникации программы с базой данных](https://github.com/fl4cko11/Music_Player_MIPT/tree/main/SQL)
+3)  [Тесты методов сущностей](https://github.com/fl4cko11/Music_Player_MIPT/tree/main/CPP_tests)
+4)  [Интерфейс и Файлы сборки](https://github.com/fl4cko11/Music_Player_MIPT/tree/main/QTInterface)
+
+## Зависимости:
+QT6 Widgets, QT6 Multimedia, QT6 Core, Cmake, psql
+
+## Сборка:
+`mkdir build
+cd build
+cmake ..
+cmake --build .
+./QTInterface`
