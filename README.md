@@ -28,4 +28,4 @@ QT6 Widgets, QT6 Multimedia, QT6 Core, Cmake, psql
 cd build
 cmake ..
 cmake --build .
-./QTInterface```
+./QTInterface
