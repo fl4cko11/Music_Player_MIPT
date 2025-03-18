@@ -1,0 +1,9 @@
+# ninja log v6
+1	251	1742246208401741091	QTInterface_autogen/timestamp	6980df4595a2a168
+1	251	1742246208401741091	QTInterface_autogen/mocs_compilation.cpp	6980df4595a2a168
+1	251	1742246208401741091	/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/QTInterface_autogen/timestamp	6980df4595a2a168
+1	251	1742246208401741091	/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/QTInterface_autogen/mocs_compilation.cpp	6980df4595a2a168
+251	1374	1742246208408943199	CMakeFiles/QTInterface.dir/QTInterface_autogen/mocs_compilation.cpp.o	891341143db2bc02
+252	1408	1742246208409601730	CMakeFiles/QTInterface.dir/main.cpp.o	25a9df768284241a
+252	1443	1742246208409705149	CMakeFiles/QTInterface.dir/mainwindow.cpp.o	9ba89f3a621962df
+1443	1624	1742246209599727096	QTInterface	cf2a0579f938277

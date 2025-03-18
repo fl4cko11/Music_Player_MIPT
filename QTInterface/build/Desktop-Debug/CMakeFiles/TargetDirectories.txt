@@ -1,0 +1,9 @@
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/QTInterface.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/install.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/QTInterface_autogen_timestamp_deps.dir
+/home/vladh/git-repos/Music_Player_MIPT/QTInterface/build/Desktop-Debug/CMakeFiles/QTInterface_autogen.dir

@@ -1,5 +1,5 @@
-#ifndef MEDIAPLAYERCONTROLLER.H
-#define MEDIAPLAYERCONTROLLER.H
+#ifndef MEDIAPLAYERCONTROLLER_HPP
+#define MEDIAPLAYERCONTROLLER_HPP
 
 #include <iostream>
 #include <string>
@@ -17,10 +17,10 @@ class DurationT {
         int minutes;
         int seconds;
     public:
-        DurationT(int hours, int minutes, int seconds): hours(hours), minutes(minutes), seconds(seconds) {}
-        int GetHours() {}
-        int GerMinutes() {}
-        int GetSeconds() {}
+        DurationT(int hours, int minutes, int seconds);
+        int GetHours();
+        int GerMinutes();
+        int GetSeconds();
 };
 
 class Track {
@@ -30,15 +30,15 @@ class Track {
         DurationT duration;
         int trackIndex;
     public:
-        Track(std::string trackName, std::string artistName, int hours, int minutes, int seconds): trackName(trackName), artistName(artistName), trackIndex(0), duration(hours, minutes, seconds) {} // при создании задаём имя трека и артиста
-        
-        std::string GetAudioPathFromDb() {} 
-        std::string GetImagePathFromDb() {}
-        DurationT GetDuration() {} // через БД получаем путь до файла с треком и файла с обложкой
-        std::string GetTrackName() {}
-        std::string GetArtistName() {}
-        int GetTrackIndex() {}
-        void SetTrackIndex(int index) {}
+        Track(std::string trackName, std::string artistName, int hours, int minutes, int seconds); // при создании задаём имя трека и артиста
+
+        std::string GetAudioPathFromDb(); 
+        std::string GetImagePathFromDb();
+        DurationT GetDuration(); // через БД получаем путь до файла с треком и файла с обложкой
+        std::string GetTrackName();
+        std::string GetArtistName();
+        int GetTrackIndex();
+        void SetTrackIndex(int index);
 };
 
 class Playlist {
@@ -46,12 +46,12 @@ class Playlist {
         std::string playlistName;
         std::vector<Track> tracks;
     public:
-        Playlist(std::string playlistName): playlistName(playlistName), tracks() {} // при создании задаётся имя плейлиста, но сам плейлист пустой с помощью кнопки можно добавить трек в плейлист
-        
-        void AddTrackToPlaylist(Track &track) {}
-        std::string GetPlaylistName() {}
-        Track GetLastTrack() {}
-        std::vector<Track> GetTracks() {}
+        Playlist(std::string playlistName); // при создании задаётся имя плейлиста, но сам плейлист пустой с помощью кнопки можно добавить трек в плейлист
+
+        void AddTrackToPlaylist(Track &track);
+        std::string GetPlaylistName();
+        Track GetLastTrack();
+        std::vector<Track> GetTracks();
 };
 
 class Player {
@@ -64,24 +64,13 @@ class Player {
         bool isPlaying;
 
     public:
-        Player(Playlist playlist): 
-            curTrack(playlist.GetLastTrack()), // Используйте переданный playlist, а не curPlaylist
-            specialTrack("freestulya", "SaByte", 0, 1, 0),
-            curPlaylist(playlist),  // Инициализируем curPlaylist переданным playlist
-            isPlaying(false) {
-                player = new QMediaPlayer();
-                audioOutput = new QAudioOutput();
-                player->setAudioOutput(audioOutput); // Связываем player и audioOutput
-                audioOutput->setVolume(1.0);  // Устанавливаем громкость по умолчанию (от 0.0 до 1.0)
-                QString qPath = QString::fromStdString(curTrack.GetAudioPathFromDb()); // Преобразование std::string в QString
-                player->setSource(QUrl::fromLocalFile(qPath));
-            }
+        Player(Playlist playlist);
         
-        void SetCurTrack(Track &track) {}
-        void SetSpecialTrackAsCur() {}
-        void SetNextTrack() {}
-        void SetPrevTrack() {}
-        void Play() {}
-        void Pause() {}
+        void SetCurTrack(Track &track);
+        void SetSpecialTrackAsCur();
+        void SetNextTrack();
+        void SetPrevTrack();
+        void Play();
+        void Pause();
 };
 #endif

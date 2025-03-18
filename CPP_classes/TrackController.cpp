@@ -1,5 +1,7 @@
 #include "MediaPlayerController.hpp"
 
+DurationT::DurationT(int hours, int minutes, int seconds): hours(hours), minutes(minutes), seconds(seconds) {}
+
 int DurationT::GetHours() {
     return hours;
 }
@@ -11,6 +13,8 @@ int DurationT::GerMinutes() {
 int DurationT::GetSeconds() {
     return seconds;
 }
+
+Track::Track(std::string trackName, std::string artistName, int hours, int minutes, int seconds): trackName(trackName), artistName(artistName), trackIndex(0), duration(hours, minutes, seconds) {} // при создании задаём имя трека и артиста
 
 std::string Track::GetAudioPathFromDb() {
     try {
