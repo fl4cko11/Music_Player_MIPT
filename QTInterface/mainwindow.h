@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "./CPP_classes/MediaPlayerController.hpp"
+#include "/home/vladh/git-repos/Music_Player_MIPT/CPP_classes/MediaPlayerController.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,7 +13,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr, Player &player);
+    MainWindow(QWidget *parent, Player &player);
     ~MainWindow();
 
 private slots:

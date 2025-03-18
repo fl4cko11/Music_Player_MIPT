@@ -2,14 +2,15 @@
 #define MEDIAPLAYERCONTROLLER_HPP
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
-#include <pqxx/pqxx>
 #include <QMediaPlayer>  // Подключаем класс QMediaPlayer для работы с аудиофайлами
 #include <QUrl>          // Подключаем класс QUrl для работы с URL-адресами (включая локальные файлы)
 #include <QObject>       // Подключаем базовый класс QObject для работы с механизмом сигналов и слотов
 #include <QApplication>  // Подключаем класс QApplication для создания графического интерфейса приложений Qt
 #include <QAudioOutput> // Для управления громкостью и выводом звука
+#include <cstdlib> // Для функции system
 
 class DurationT {
     private:
