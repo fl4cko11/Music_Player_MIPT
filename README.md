@@ -24,7 +24,8 @@
 QT6 Widgets, QT6 Multimedia, QT6 Core, Cmake, psql
 
 ## Сборка:
-```cd Music_Player_MIPT/QTInterface
+```
+cd Music_Player_MIPT/QTInterface
 mkdir build
 cd build
 cmake ..
