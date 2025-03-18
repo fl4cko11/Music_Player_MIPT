@@ -24,8 +24,8 @@
 QT6 Widgets, QT6 Multimedia, QT6 Core, Cmake, psql
 
 ## Сборка:
-`mkdir build
+```mkdir build
 cd build
 cmake ..
 cmake --build .
-./QTInterface`
+./QTInterface```
