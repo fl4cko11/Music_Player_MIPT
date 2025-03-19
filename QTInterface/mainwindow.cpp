@@ -15,25 +15,38 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+// Обновление обложки трека
 void MainWindow::updateCoverImage()
 {
-    QPixmap coverImage; // Declare a variable to hold the cover image
-
-    // Get the current track's cover image path as std::string
+    // Получаем путь к изображению обложки текущего трека как std::string
     std::string currentTrackImagePath = player.curTrack.GetImagePathFromDb();
-
-    std::cerr << currentTrackImagePath << std::endl;
-
-    QString imagePath = QString::fromStdString(currentTrackImagePath); // Convert std::string to QString
+    QString imagePath = QString::fromStdString(currentTrackImagePath); // Преобразуем std::string в QString
 
     if (!imagePath.isEmpty()) {
-        coverImage.load(imagePath); // Load the image
-        ui->label->setPixmap(coverImage.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation)); // Set the pixmap and scale to fit the label
-    } 
-    else {
-        // Optionally handle the case where there is no cover image
-        ui->label->clear(); // Clear the label if no image is available
+        // Загружаем изображение как QImage
+        QImage coverImage(imagePath);
+
+        if (!coverImage.isNull()) {
+            // Устанавливаем обложку и масштабируем под QLabel
+            ui->label->setPixmap(QPixmap::fromImage(coverImage.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation)));
+
+            // Устанавливаем обложку также и в label_2, растягивая его на весь экран
+            QPixmap scaledPixmap = QPixmap::fromImage(coverImage.scaled(ui->label_2->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
+            QGraphicsBlurEffect *blurEffect = new QGraphicsBlurEffect();
+            blurEffect->setBlurRadius(10); // Устанавливаем радиус размытия
+
+            // Устанавливаем размытое изображение на label_2
+            ui->label_2->setPixmap(scaledPixmap);
+            ui->label_2->setGraphicsEffect(blurEffect);
+        } else {
+            qWarning() << "Не удалось загрузить изображение из:" << imagePath;
+            ui->label->clear(); // Очищаем QLabel, если изображение не доступно
+            ui->label_2->clear(); // Очищаем label_2, если изображение не доступно
+        }
+    } else {
+        // Удаляем обложку, если путь пуст
+        ui->label->clear();
+        ui->label_2->clear();
     }
 }
 

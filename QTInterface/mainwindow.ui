@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1553</width>
-    <height>975</height>
+    <width>805</width>
+    <height>649</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,10 +23,10 @@
    <widget class="QListView" name="Playlist">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>170</y>
-      <width>511</width>
-      <height>651</height>
+      <x>200</x>
+      <y>110</y>
+      <width>361</width>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -43,10 +43,10 @@
    <widget class="QPushButton" name="Play">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>720</y>
-      <width>151</width>
-      <height>61</height>
+      <x>320</x>
+      <y>480</y>
+      <width>121</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -61,10 +61,10 @@
    <widget class="QPushButton" name="Next">
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>720</y>
-      <width>151</width>
-      <height>61</height>
+      <x>440</x>
+      <y>480</y>
+      <width>91</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -79,10 +79,10 @@
    <widget class="QPushButton" name="Prev">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>720</y>
-      <width>151</width>
-      <height>61</height>
+      <x>230</x>
+      <y>480</y>
+      <width>91</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -97,10 +97,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>270</y>
-      <width>351</width>
-      <height>311</height>
+      <x>260</x>
+      <y>160</y>
+      <width>241</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -110,6 +110,25 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;TextLabel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>Playlist</zorder>
+   <zorder>Play</zorder>
+   <zorder>Next</zorder>
+   <zorder>Prev</zorder>
+   <zorder>label</zorder>
   </widget>
  </widget>
  <resources/>

@@ -8,6 +8,8 @@
 #include <QString>          
 #include <QSize>            
 #include <QLabel>
+#include <QGraphicsBlurEffect>
+#include <QImage>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,7 +23,7 @@ public:
     MainWindow(QWidget *parent, Player &player);
     ~MainWindow();
     void updateCoverImage();
-
+    
 private slots:
     void on_Play_clicked();
 
