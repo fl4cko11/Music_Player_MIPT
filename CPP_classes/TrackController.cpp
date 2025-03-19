@@ -48,7 +48,7 @@ std::string Track::GetImagePathFromDb() {
         std::cerr << "Ошибка при выполнении команды." << std::endl;
     }
 
-    std::ifstream inFile("/home/vladh/git-repos/Music_Player_MIPT/SQL/GetAudioPath.txt");
+    std::ifstream inFile("/home/vladh/git-repos/Music_Player_MIPT/SQL/GetImagePath.txt");
     std::string imagePath;
 
     if (inFile.is_open()) {

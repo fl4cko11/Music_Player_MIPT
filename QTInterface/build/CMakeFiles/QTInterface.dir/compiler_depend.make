@@ -291,12 +291,16 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/qt6/QtCore/QObject \
+  /usr/include/qt6/QtCore/QPropertyAnimation \
+  /usr/include/qt6/QtCore/QSize \
+  /usr/include/qt6/QtCore/QString \
   /usr/include/qt6/QtCore/QUrl \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20iterator.h \
   /usr/include/qt6/QtCore/q20memory.h \
   /usr/include/qt6/QtCore/q20type_traits.h \
   /usr/include/qt6/QtCore/q23utility.h \
+  /usr/include/qt6/QtCore/qabstractanimation.h \
   /usr/include/qt6/QtCore/qalgorithms.h \
   /usr/include/qt6/QtCore/qanystringview.h \
   /usr/include/qt6/QtCore/qarraydata.h \
@@ -329,6 +333,7 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtCore/qdatastream.h \
   /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qeasingcurve.h \
   /usr/include/qt6/QtCore/qelapsedtimer.h \
   /usr/include/qt6/QtCore/qendian.h \
   /usr/include/qt6/QtCore/qeventloop.h \
@@ -343,6 +348,7 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtCore/qglobalstatic.h \
   /usr/include/qt6/QtCore/qhash.h \
   /usr/include/qt6/QtCore/qhashfunctions.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qiterable.h \
   /usr/include/qt6/QtCore/qiterator.h \
@@ -369,6 +375,7 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtCore/qpair.h \
   /usr/include/qt6/QtCore/qpoint.h \
   /usr/include/qt6/QtCore/qprocessordetection.h \
+  /usr/include/qt6/QtCore/qpropertyanimation.h \
   /usr/include/qt6/QtCore/qrect.h \
   /usr/include/qt6/QtCore/qrefcount.h \
   /usr/include/qt6/QtCore/qscopedpointer.h \
@@ -417,10 +424,12 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtCore/qurl.h \
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/qvariant.h \
+  /usr/include/qt6/QtCore/qvariantanimation.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
+  /usr/include/qt6/QtGui/QPixmap \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qbrush.h \
@@ -437,12 +446,14 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
+  /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
   /usr/include/qt6/QtGui/qpolygon.h \
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtGui/qtgui-config.h \
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
@@ -458,8 +469,11 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
   /usr/include/qt6/QtMultimedia/qtmultimediaexports.h \
   /usr/include/qt6/QtMultimedia/qtmultimediaglobal.h \
   /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
@@ -1098,8 +1112,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-relwithdebinfo.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake:
-
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandEglPlatformIntegrationPluginTargets.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandEglPlatformIntegrationPluginConfig.cmake:
@@ -1209,8 +1221,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 /usr/lib/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
 
@@ -1352,6 +1362,20 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake:
 
+/usr/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake:
+
+/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
+
+/usr/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
+
 /usr/include/c++/14.2.1/type_traits:
 
 /usr/include/c++/14.2.1/array:
@@ -1468,6 +1492,10 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/include/linux/posix_types.h:
 
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
+
+/usr/include/qt6/QtCore/QObject:
+
 /usr/include/qt6/QtCore/q23utility.h:
 
 /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
@@ -1524,8 +1552,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/include/c++/14.2.1/bits/stl_algobase.h:
 
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
-
 /usr/include/c++/14.2.1/bits/stl_bvector.h:
 
 /usr/include/c++/14.2.1/bits/std_abs.h:
@@ -1569,6 +1595,8 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 /usr/include/c++/14.2.1/bits/postypes.h:
 
 /usr/include/c++/14.2.1/bits/unordered_map.h:
+
+/usr/include/qt6/QtCore/qiodevice.h:
 
 /usr/include/c++/14.2.1/algorithm:
 
@@ -1632,6 +1660,8 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/include/bits/thread-shared-types.h:
 
+/usr/include/qt6/QtCore/qeasingcurve.h:
+
 /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 /usr/include/c++/14.2.1/stdexcept:
@@ -1643,8 +1673,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/bits/types/__FILE.h:
 
 /usr/include/c++/14.2.1/bits/charconv.h:
 
@@ -1676,6 +1704,10 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 
 /usr/include/qt6/QtCore/qstringalgorithms.h:
 
+/usr/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake:
+
+/usr/include/qt6/QtGui/qtextdocument.h:
+
 /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:
 
 /usr/include/c++/14.2.1/bits/erase_if.h:
@@ -1697,10 +1729,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /home/vladh/git-repos/Music_Player_MIPT/CPP_classes/PlaylistController.cpp:
-
-/usr/include/qt6/QtCore/QObject:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
 
 /usr/include/bits/long-double.h:
 
@@ -1735,8 +1763,6 @@ QTInterface_autogen/timestamp: /home/vladh/git-repos/Music_Player_MIPT/CPP_class
 /home/vladh/git-repos/Music_Player_MIPT/QTInterface/mainwindow.h:
 
 /usr/include/c++/14.2.1/bits/shared_ptr_base.h:
-
-/usr/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake:
 
 /usr/lib/cmake/Qt6/3rdparty/kwin/FindXKB.cmake:
 
@@ -1942,8 +1968,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qsharedpointer.h:
 
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
-
 /usr/include/c++/14.2.1/bits/cxxabi_forced.h:
 
 /usr/include/asm/bitsperlong.h:
@@ -1981,6 +2005,8 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/include/bits/types/timer_t.h:
+
+/usr/include/qt6/QtCore/qabstractanimation.h:
 
 /usr/include/qt6/QtCore/qvariant.h:
 
@@ -2048,6 +2074,12 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/QUrl:
 
+/usr/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake:
+
+/usr/include/c++/14.2.1/bits/basic_string.h:
+
 /usr/include/c++/14.2.1/bits/exception_ptr.h:
 
 /usr/include/bits/uintn-identity.h:
@@ -2078,6 +2110,10 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/bits/floatn.h:
 
+/usr/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake:
+
+/usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
+
 /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h:
 
 /usr/include/asm-generic/posix_types.h:
@@ -2105,12 +2141,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 /usr/include/bits/errno.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/qt6/QtWidgets/qtabwidget.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
 
 /usr/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets.cmake:
 
@@ -2160,6 +2190,18 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/linux/types.h:
 
+/usr/include/qt6/QtCore/QPropertyAnimation:
+
+/usr/include/qt6/QtCore/qvariantanimation.h:
+
+/usr/include/qt6/QtCore/QSize:
+
+/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake:
+
+/usr/include/qt6/QtCore/QString:
+
+/usr/include/qt6/QtCore/qfunctionpointer.h:
+
 /usr/lib/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake:
 
 /usr/include/qt6/QtCore/q20functional.h:
@@ -2167,6 +2209,12 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 /usr/include/features.h:
 
 /usr/include/qt6/QtCore/q20iterator.h:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+
+/usr/include/c++/14.2.1/bits/functexcept.h:
+
+/usr/include/qt6/QtCore/q20memory.h:
 
 /usr/include/qt6/QtGui/qimage.h:
 
@@ -2178,8 +2226,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qflags.h:
 
-/usr/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
-
 /usr/include/qt6/QtCore/qassert.h:
 
 /usr/include/c++/14.2.1/bits/locale_facets.h:
@@ -2187,12 +2233,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 /usr/include/qt6/QtCore/qatomic_cxx11.h:
 
 /usr/include/qt6/QtCore/qbasicatomic.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
 
 /usr/include/qt6/QtCore/qbytearraylist.h:
 
@@ -2264,10 +2304,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qsharedpointer_impl.h:
 
-/usr/include/qt6/QtCore/qfunctionpointer.h:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
-
 /usr/include/qt6/QtCore/qglobal.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
@@ -2302,6 +2338,8 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qmalloc.h:
 
+/usr/include/qt6/QtGui/QPixmap:
+
 /usr/include/qt6/QtGui/qrgba64.h:
 
 /usr/include/qt6/QtCore/qmap.h:
@@ -2315,8 +2353,6 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 /usr/include/qt6/QtWidgets/qsizepolicy.h:
 
 /usr/include/qt6/QtCore/qmetacontainer.h:
-
-/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
 /usr/include/qt6/QtCore/qmetatype.h:
 
@@ -2346,13 +2382,21 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/qt6/QtMultimedia/QAudioOutput:
 
-/usr/include/qt6/QtCore/qscopedpointer.h:
+/usr/include/qt6/QtWidgets/qtabwidget.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/qt6/QtCore/qpropertyanimation.h:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
 
 /usr/include/c++/14.2.1/bits/stl_iterator.h:
 
 /usr/include/qt6/QtCore/qrefcount.h:
 
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
+/usr/include/qt6/QtCore/qscopedpointer.h:
 
 /usr/include/qt6/QtCore/qscopeguard.h:
 
@@ -2404,10 +2448,6 @@ QTInterface_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/qsystemdetection.h:
 
-/usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
-
-/usr/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake:
-
 /usr/include/qt6/QtCore/qtclasshelpermacros.h:
 
 /usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
@@ -2429,8 +2469,6 @@ QTInterface_autogen/moc_predefs.h:
 /usr/include/locale.h:
 
 /usr/include/qt6/QtCore/qtdeprecationmarkers.h:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
 /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
 
@@ -2518,6 +2556,8 @@ QTInterface_autogen/moc_predefs.h:
 
 /usr/bin/cmake:
 
+/usr/include/qt6/QtGui/qpicture.h:
+
 /usr/include/qt6/QtGui/qrgb.h:
 
 /usr/include/c++/14.2.1/list:
@@ -2546,7 +2586,21 @@ QTInterface_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtMultimedia/qtmultimediaglobal.h:
 
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/qt6/QtWidgets/QLabel:
+
 /usr/include/qt6/QtWidgets/QMainWindow:
+
+/usr/lib/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
+
+/usr/include/qt6/QtWidgets/qframe.h:
+
+/usr/include/qt6/QtWidgets/qlabel.h:
 
 /usr/share/cmake/Modules/Internal/FeatureTesting.cmake:
 
@@ -2618,12 +2672,6 @@ QTInterface_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
-/usr/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
-
-/usr/include/c++/14.2.1/bits/basic_string.h:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake:
-
 /usr/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 /usr/include/qt6/QtCore/qxptype_traits.h:
@@ -2663,9 +2711,3 @@ QTInterface_autogen/moc_predefs.h:
 /usr/include/c++/14.2.1/bits/stl_tempbuf.h:
 
 /usr/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
-
-/usr/include/c++/14.2.1/bits/functexcept.h:
-
-/usr/include/qt6/QtCore/q20memory.h:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:

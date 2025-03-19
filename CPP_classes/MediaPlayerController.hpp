@@ -59,12 +59,11 @@ class Player {
     private:
         QMediaPlayer *player; // Указатель на экземпляр QMediaPlayer, используемый для воспроизведения аудио
         QAudioOutput *audioOutput; // Добавляем аудиовыход
-        Track curTrack;
         Track specialTrack;
         Playlist curPlaylist;
-        bool isPlaying;
-
     public:
+        Track curTrack;
+        bool isPlaying;
         Player(Playlist playlist);
         
         void SetCurTrack(Track &track);

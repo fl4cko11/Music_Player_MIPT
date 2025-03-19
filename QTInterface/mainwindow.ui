@@ -6,58 +6,71 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1120</width>
-    <height>624</height>
+    <width>1553</width>
+    <height>975</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #508c60; /* Background color of the main window */
+    border: 2px solid #a2b5cc; /* Border properties */
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="listView">
+   <widget class="QListView" name="Playlist">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>520</x>
+      <y>170</y>
       <width>511</width>
-      <height>541</height>
+      <height>651</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListView {
+    background-color: #f0f0f0; /* Background color of the QListView */
+    border: 1px solid #cccccc; /* Border properties */
+	border-radius: 20px;
+    color: #333333; /* Text color */
+    font-family: &quot;Segoe UI&quot;; /* Font family */
+    font-size: 14px; /* Font size */
+}</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Play">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>320</y>
+      <x>700</x>
+      <y>720</y>
       <width>151</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #383d3a;
+}</string>
     </property>
     <property name="text">
      <string>Play</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Pause">
-    <property name="geometry">
-     <rect>
-      <x>840</x>
-      <y>320</y>
-      <width>151</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Pause</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="Next">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>410</y>
+      <x>850</x>
+      <y>720</y>
       <width>151</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #383d3a;
+}</string>
     </property>
     <property name="text">
      <string>Next</string>
@@ -66,28 +79,38 @@
    <widget class="QPushButton" name="Prev">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>410</y>
+      <x>550</x>
+      <y>720</y>
       <width>151</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #383d3a;
+}</string>
     </property>
     <property name="text">
      <string>Prev</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>270</y>
+      <width>351</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;TextLabel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1120</width>
-     <height>19</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

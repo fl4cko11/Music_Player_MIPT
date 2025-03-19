@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 #include "/home/vladh/git-repos/Music_Player_MIPT/CPP_classes/MediaPlayerController.hpp"
+#include <QPropertyAnimation>
+#include <QPixmap>
+#include <QString>          
+#include <QSize>            
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,11 +20,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent, Player &player);
     ~MainWindow();
+    void updateCoverImage();
 
 private slots:
     void on_Play_clicked();
-
-    void on_Pause_clicked();
 
     void on_Next_clicked();
 

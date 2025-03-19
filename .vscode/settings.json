@@ -76,6 +76,9 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "qapplication": "cpp"
-    }
+        "qapplication": "cpp",
+        "qpixmap": "cpp",
+        "qstring": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/vladh/git-repos/Music_Player_MIPT/QTInterface"
 }
