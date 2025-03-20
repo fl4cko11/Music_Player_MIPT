@@ -9,8 +9,13 @@
 #include <QUrl>          // Подключаем класс QUrl для работы с URL-адресами (включая локальные файлы)
 #include <QObject>       // Подключаем базовый класс QObject для работы с механизмом сигналов и слотов
 #include <QApplication>  // Подключаем класс QApplication для создания графического интерфейса приложений Qt
-#include <QAudioOutput> // Для управления громкостью и выводом звука
-#include <cstdlib> // Для функции system
+#include <QAudioOutput>  // Для управления громкостью и выводом звука
+#include <cstdlib>       // Для функции system
+#include <condition_variable>
+#include <atomic>
+#include <chrono>
+
+extern std::atomic<bool> running; // Флаг для управления потоком (extern указывает, что глобальная существует, но только в некотором cpp)
 
 class DurationT {
     private:
@@ -72,5 +77,6 @@ class Player {
         void SetPrevTrack();
         void Play();
         void Pause();
+        void CountListening();
 };
 #endif

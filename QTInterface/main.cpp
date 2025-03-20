@@ -1,11 +1,13 @@
 #include "mainwindow.h"
-#include <QApplication>
+#include <thread>
 
 int main(int argc, char *argv[])
 {
-    Track specialTrack{"praise", "asap", 0, 1, 0};
+    Track track1{"praise", "asap", 0, 0, 0};
+    Track track2{"o_yeah", "in_yan", 0, 0, 0};
     Playlist ATMO{"ATMO"};
-    ATMO.AddTrackToPlaylist(specialTrack);
+    ATMO.AddTrackToPlaylist(track1);
+    ATMO.AddTrackToPlaylist(track2);
     Player player{ATMO};
     Player &player_ref = player;
 
@@ -15,6 +17,13 @@ int main(int argc, char *argv[])
     // Устанавливаем жесткий размер окна 800x650
     w.setFixedSize(800, 650);
 
+    std::thread countListeningThread(&Player::CountListening, &player);
+    countListeningThread.detach(); // Отделяем поток, чтобы продолжить выполнение
+    
     w.show();
-    return a.exec();
+    int result = a.exec();
+    
+    running = false; // Устанавливаем флаг для завершения работы потока
+    
+    return result;
 }

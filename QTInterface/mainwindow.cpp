@@ -28,7 +28,7 @@ void MainWindow::updateCoverImage()
 
         if (!coverImage.isNull()) {
             // Устанавливаем обложку и масштабируем под QLabel
-            ui->label->setPixmap(QPixmap::fromImage(coverImage.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation)));
+            ui->label->setPixmap(QPixmap::fromImage(coverImage.scaled(ui->label->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
 
             // Устанавливаем обложку также и в label_2, растягивая его на весь экран
             QPixmap scaledPixmap = QPixmap::fromImage(coverImage.scaled(ui->label_2->size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
@@ -89,10 +89,12 @@ void MainWindow::on_Next_clicked()
 {
     player.SetNextTrack();
     updateCoverImage(); // Обновляем изображение на следующем треке
+    ui->Play->setText("Pause");
 }
 
 void MainWindow::on_Prev_clicked()
 {
     player.SetPrevTrack();
     updateCoverImage(); // Обновляем изображение на предыдущем треке
+    ui->Play->setText("Pause");
 }
