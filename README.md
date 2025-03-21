@@ -1,6 +1,6 @@
 # MUSIC PLAYER MIPT
 
-## Expirience:
+## Experience:
 ![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/experience_example.png)
 
 ## Концептуальная модель:
