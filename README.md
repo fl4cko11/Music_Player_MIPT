@@ -1,5 +1,8 @@
 # MUSIC PLAYER MIPT
 
+## Expirience:
+![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/experience_example.png)
+
 ## Концептуальная модель:
 ![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/conceptual_model.png)
 
@@ -12,7 +15,7 @@
 6) База Данных **TrackDB** для хранения путей до аудиофайлов, обложек треков, кол-ва прослушиваний
 
 ## Логическая модель:
-![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/logic_model.png)
+![](https://github.com/fl4cko11/Music_Player_MIPT/blob/main/INTRODUCE/logic_model1.png)
 
 ## Структура Проекта:
 1)  [Декларация и Реализация всех сущностей](https://github.com/fl4cko11/Music_Player_MIPT/tree/main/CPP_classes)
